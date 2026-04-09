@@ -676,7 +676,7 @@ async function apiFetch(body) {
   try {
     const res = await fetch(APPS_SCRIPT_URL, {
       method:  "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "text/plain" },
       body:    JSON.stringify(body)
     });
     return await res.json();
